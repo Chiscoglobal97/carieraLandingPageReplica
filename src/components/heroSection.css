@@ -1,0 +1,133 @@
+.heroSection {
+  width: 100%;
+  min-height: 500px;
+  padding: 5rem 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heroContent {
+  width: 100%;
+  max-width: 850px;
+  text-align: center;
+  color: white;
+}
+
+.heroTitle {
+  margin-bottom: 1rem;
+  font-size: clamp(2.3rem, 5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.heroDescription {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: rgb(235, 235, 235);
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  line-height: 1.7;
+}
+
+.heroSearchForm {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0.4rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+}
+
+.heroSearchInput {
+  width: 100%;
+  min-width: 0;
+  padding: 1rem 1.2rem;
+  color: rgb(40, 40, 40);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.heroSearchInput::placeholder {
+  color: rgb(130, 130, 130);
+}
+
+
+.visuallyHidden {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .heroSection {
+    min-height: 440px;
+    padding: 4rem 4%;
+  }
+
+  .heroContent {
+    max-width: 680px;
+  }
+
+  .heroDescription {
+    margin-bottom: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .heroSection {
+    min-height: 430px;
+    padding: 3.5rem 5%;
+  }
+
+  .heroSearchForm {
+    grid-template-columns: 1fr;
+    gap: 0.45rem;
+    padding: 0.45rem;
+  }
+
+  .heroSearchInput {
+    padding: 0.9rem 1rem;
+  }
+
+  .heroSearchButton {
+    width: 100%;
+    padding: 0.9rem 1rem;
+  }
+
+  .popularSearches {
+    line-height: 1.6;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .heroSection {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroDescription {
+    font-size: 0.9rem;
+  }
+
+  .popularSearches {
+    font-size: 0.82rem;
+  }
+}
