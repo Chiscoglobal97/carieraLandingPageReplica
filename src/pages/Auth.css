@@ -1,0 +1,439 @@
+.authPage {
+  width: 100%;
+  min-height: 100vh;
+  padding: 3rem 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(245, 247, 250);
+}
+
+.authSection {
+  width: 100%;
+  max-width: 520px;
+  padding: 2.5rem;
+  background-color: white;
+  border: 1px solid rgb(225, 228, 233);
+  border-radius: 14px;
+  box-shadow: 0 10px 35px rgba(25, 30, 40, 0.08);
+}
+
+.loginSection {
+  max-width: 500px;
+}
+
+.loginPage {
+  min-height: 100svh;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.loginPage .loginSection {
+  padding: 1.7rem 2.2rem;
+}
+
+.loginPage .userIconContainer {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 0.9rem;
+}
+
+.loginPage .userIcon {
+  font-size: 3.2rem;
+}
+
+.loginPage .authHeader {
+  margin-bottom: 1.3rem;
+}
+
+.loginPage .authHeader h1 {
+  margin-bottom: 0.45rem;
+  font-size: 1.75rem;
+}
+
+.loginPage .authForm {
+  gap: 0.9rem;
+}
+
+.loginPage .formGroup {
+  gap: 0.4rem;
+}
+
+.loginPage .formGroup input {
+  min-height: 45px;
+}
+
+.loginPage .authButton {
+  min-height: 45px;
+}
+
+.loginPage .authAlternative {
+  margin-top: 1rem;
+}
+
+.loginPage .homeLink {
+  margin-top: 0.8rem;
+}
+
+.signupSection {
+  max-width: 850px;
+}
+
+.authHeader {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.authHeader h1 {
+  margin-bottom: 0.7rem;
+  color: rgb(35, 35, 35);
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+.authHeader .authTag {
+  margin-bottom: 0.5rem;
+  color: rgb(36, 163, 163);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06rem;
+  text-transform: uppercase;
+}
+
+.authDescription {
+  color: rgb(100, 105, 115);
+  line-height: 1.6;
+}
+
+.userIconContainer {
+  width: 88px;
+  height: 88px;
+  margin: 0 auto 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(232, 247, 247);
+  border: 1px solid rgb(202, 232, 232);
+  border-radius: 50%;
+}
+
+.userIcon {
+  color: rgb(36, 163, 163);
+  font-size: 4rem;
+}
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.signupForm {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroupFull {
+  grid-column: 1 / -1;
+}
+
+.formGroup label {
+  color: rgb(45, 45, 45);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.formGroup input,
+.formGroup select {
+  width: 100%;
+  min-height: 48px;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid rgb(205, 210, 218);
+  border-radius: 7px;
+  background-color: white;
+  color: rgb(35, 35, 35);
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.formGroup input::placeholder {
+  color: rgb(145, 150, 160);
+}
+
+.formGroup input:focus,
+.formGroup select:focus {
+  border-color: rgb(36, 163, 163);
+  box-shadow: 0 0 0 3px rgba(36, 163, 163, 0.14);
+}
+
+.passwordInputWrapper {
+  width: 100%;
+  position: relative;
+}
+
+.passwordInputWrapper input {
+  width: 100%;
+  padding-right: 3.2rem;
+}
+
+.passwordToggleButton {
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  top: 50%;
+  right: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  color: rgb(100, 105, 115);
+  font-size: 1.25rem;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: color 0.2s ease;
+}
+
+.passwordToggleButton:hover {
+  color: rgb(36, 163, 163);
+}
+
+.passwordToggleButton:focus-visible {
+  border-radius: 5px;
+  outline: 2px solid rgb(36, 163, 163);
+  outline-offset: 1px;
+}
+
+.authButton {
+  width: 100%;
+  min-height: 48px;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 7px;
+  background-color: rgb(36, 163, 163);
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.authButton:hover {
+  background-color: rgb(82, 49, 188);
+  transform: translateY(-1px);
+}
+
+.authButtonLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.authAlternative {
+  margin-top: 1.5rem;
+  color: rgb(95, 100, 110);
+  text-align: center;
+}
+
+.authAlternative a,
+.homeLink {
+  color: rgb(36, 163, 163);
+  font-weight: 600;
+}
+
+.authAlternative a:hover,
+.homeLink:hover {
+  color: rgb(82, 49, 188);
+}
+
+.homeLink {
+  margin-top: 1.2rem;
+  display: block;
+  text-align: center;
+}
+
+.formError {
+  margin-bottom: 1.2rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid rgb(225, 120, 120);
+  border-radius: 7px;
+  background-color: rgb(255, 240, 240);
+  color: rgb(170, 35, 35);
+  line-height: 1.5;
+}
+
+.welcomeSection {
+  text-align: center;
+}
+
+.welcomeIconContainer {
+  width: 78px;
+  height: 78px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(225, 248, 244);
+  border: 1px solid rgb(190, 230, 220);
+  border-radius: 50%;
+}
+
+.welcomeIcon {
+  color: rgb(36, 163, 163);
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 650px) {
+  .authPage {
+    padding: 2rem 5%;
+    align-items: flex-start;
+  }
+
+  .authSection {
+    padding: 1.7rem;
+  }
+
+  .loginPage {
+    min-height: 100svh;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    align-items: center;
+  }
+
+  .loginPage .loginSection {
+    padding: 1.4rem 1.5rem;
+  }
+
+  .loginPage .userIconContainer {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 0.7rem;
+  }
+
+  .loginPage .userIcon {
+    font-size: 2.9rem;
+  }
+
+  .loginPage .authHeader {
+    margin-bottom: 1rem;
+  }
+
+  .loginPage .authHeader h1 {
+    font-size: 1.5rem;
+  }
+
+  .loginPage .authDescription {
+    font-size: 0.9rem;
+    line-height: 1.45;
+  }
+
+  .loginPage .authForm {
+    gap: 0.75rem;
+  }
+
+  .loginPage .authAlternative {
+    margin-top: 0.8rem;
+  }
+
+  .loginPage .homeLink {
+    margin-top: 0.6rem;
+  }
+
+  .signupForm {
+    grid-template-columns: 1fr;
+  }
+
+  .formGroupFull {
+    grid-column: auto;
+  }
+
+  .authHeader h1 {
+    font-size: 1.65rem;
+  }
+}
+
+@media screen and (max-height: 700px) and (min-width: 651px) {
+  .loginPage {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .loginPage .loginSection {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .loginPage .userIconContainer {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0.6rem;
+  }
+
+  .loginPage .userIcon {
+    font-size: 2.7rem;
+  }
+
+  .loginPage .authHeader {
+    margin-bottom: 1rem;
+  }
+
+  .loginPage .authHeader h1 {
+    font-size: 1.55rem;
+  }
+
+  .loginPage .authDescription {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .loginPage .authForm {
+    gap: 0.7rem;
+  }
+
+  .loginPage .authAlternative {
+    margin-top: 0.75rem;
+  }
+
+  .loginPage .homeLink {
+    margin-top: 0.55rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .authPage {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .authSection {
+    padding: 1.4rem;
+  }
+
+  .loginPage {
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+  }
+
+  .loginPage .loginSection {
+    padding: 1.2rem;
+  }
+
+  .loginPage .userIconContainer {
+    width: 58px;
+    height: 58px;
+  }
+
+  .loginPage .userIcon {
+    font-size: 2.6rem;
+  }
+}

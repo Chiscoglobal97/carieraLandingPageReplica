@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { Link } from "react-router";
 import headerLogo from "../assets/headerlogo.png";
 import "./Header.css";
+
 
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -19,6 +21,8 @@ function Header() {
     setIsMobileMenuOpen(false);
     setIsMobileHomeOpen(false);
   }
+
+
 
   return (
     <header className="headerContainer">
@@ -132,13 +136,13 @@ function Header() {
             </li>
           </ul>
 
-          <a
+          <Link
             className="ctaButton"
-            href="#login"
+            to="/login"
             onClick={closeMobileMenu}
           >
             Login
-          </a>
+          </Link>
         </div>
 
         <button

@@ -1,31 +1,43 @@
+import {
+  Routes,
+  Route,
+} from "react-router";
 
-import  Header from "./components/header"
-import HeroSection from "./components/heroSection"
-import ArticlesSection from "./components/ArticlesSection";
-import AdditionalProductsSection from "./components/AdditionalProductsSection"
-import FaqSection from "./components/FaqSection";
-import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
+import LoginPage from "./pages/LoginPage";
+import SignupPage from "./pages/SignupPage";
+import WelcomePage from "./pages/WelcomePage";
+import DashboardPage from "./pages/DashboardPage";
 import "./App.css";
-
 
 function App() {
   return (
-    <div className="app">
-      <header>
-        <Header />
-      </header>
+    <Routes>
+      <Route
+        path="/"
+        element={<HomePage />}
+      />
 
-      <main>
-        <HeroSection />
-         <ArticlesSection />
-         <AdditionalProductsSection />
-         <FaqSection />
-      </main>
+      <Route
+        path="/login"
+        element={<LoginPage />}
+      />
 
-      <footer>
-        <Footer />
-      </footer>
-    </div>
+      <Route
+        path="/signup"
+        element={<SignupPage />}
+      />
+
+      <Route
+        path="/welcome"
+        element={<WelcomePage />}
+      />
+
+      <Route
+        path="/dashboard"
+        element={<DashboardPage />}
+      />
+    </Routes>
   );
 }
 
